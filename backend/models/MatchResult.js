@@ -1,0 +1,2 @@
+import mongoose from 'mongoose';
+const s=new mongoose.Schema({projectId:{type:mongoose.Schema.Types.ObjectId,ref:'Project'},progressEventId:{type:mongoose.Schema.Types.ObjectId,ref:'ProgressEvent'},scheduleActivityId:{type:mongoose.Schema.Types.ObjectId,ref:'ScheduleActivity'},confidenceScore:Number,matchingMethod:String,matchingFactors:Object,status:{type:String,enum:['PENDING','APPROVED','REJECTED','UNMATCHED'],default:'PENDING'},reviewedBy:{type:mongoose.Schema.Types.ObjectId,ref:'User'},reviewedAt:Date},{timestamps:true});export default mongoose.model('MatchResult',s);

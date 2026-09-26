@@ -1,0 +1,7 @@
+Activity ID,Activity Name,WBS Level,Parent Activity ID,Discipline,Location,Planned Start,Planned End
+PIP-L6-024,Erect Line 24-XX,L6,PIP-L5-003,Piping,Area A,2026-09-03,2026-09-07
+PIP-L6-025,Install Line 25 valves,L6,PIP-L5-003,Piping,Area B,2026-09-08,2026-09-14
+CIV-L6-001,Foundation excavation,L6,CIV-L5-001,Civil,Area A,2026-09-01,2026-09-05
+ELE-L6-010,Install MCC panel,L6,ELE-L5-002,Electrical,Substation,2026-09-05,2026-09-09
+INS-L6-004,Instrument tubing installation,L6,INS-L5-001,Instrumentation,Area A,2026-09-07,2026-09-13
+MEC-L6-007,Pump baseplate alignment,L6,MEC-L5-004,Mechanical,Pump House,2026-09-03,2026-09-06

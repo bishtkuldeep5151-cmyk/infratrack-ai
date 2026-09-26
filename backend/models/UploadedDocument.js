@@ -1,0 +1,2 @@
+import mongoose from 'mongoose';
+const s=new mongoose.Schema({projectId:{type:mongoose.Schema.Types.ObjectId,ref:'Project'},filename:String,originalName:String,fileType:String,sourceType:{type:String,enum:['DAILY_REPORT','DISCIPLINE_REPORT','SITE_DIARY','SCHEDULE','OTHER']},filePath:String,extractedText:String,processingStatus:{type:String,default:'UPLOADED'},uploadedBy:{type:mongoose.Schema.Types.ObjectId,ref:'User'}},{timestamps:true});export default mongoose.model('UploadedDocument',s);

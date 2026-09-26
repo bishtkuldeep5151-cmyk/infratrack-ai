@@ -1,0 +1,2 @@
+import mongoose from 'mongoose';
+const s=new mongoose.Schema({fullName:{type:String,required:true},email:{type:String,required:true,unique:true,lowercase:true},phone:String,role:{type:String,enum:['Admin','Project Manager','Planner','Supervisor'],default:'Supervisor'},employeeId:{type:String,required:true},passwordHash:{type:String,required:true},active:{type:Boolean,default:true}},{timestamps:true});export default mongoose.model('User',s);

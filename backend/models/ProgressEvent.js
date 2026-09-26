@@ -1,0 +1,2 @@
+import mongoose from 'mongoose';
+const s=new mongoose.Schema({projectId:{type:mongoose.Schema.Types.ObjectId,ref:'Project'},sourceDocumentId:{type:mongoose.Schema.Types.ObjectId,ref:'UploadedDocument'},rawText:String,activityDescription:String,eventType:{type:String,enum:['START','END','PROGRESS','DELAY']},eventDate:Date,discipline:String,location:String,progress:Number,delayReason:String,extractedKeywords:[String],createdBy:{type:mongoose.Schema.Types.ObjectId,ref:'User'}},{timestamps:true});export default mongoose.model('ProgressEvent',s);
